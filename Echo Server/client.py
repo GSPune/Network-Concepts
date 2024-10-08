@@ -12,8 +12,7 @@ while True:
         #send data
         message = input("Enter your message for the server: ")
         print(f"Sending: {message}")
-        if c.sendall(message.encode()):
-            print("Huh??")
+        c.sendall(message.encode())
         if message == 'Close': 
               break
         #Receive response from server
