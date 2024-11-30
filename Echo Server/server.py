@@ -9,7 +9,7 @@ PORT = 12345 #Port to listen to
 # AF_INET is the Internet address family for IPv4 & SOCK_STREAM is the socket type for TCP
 s = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
 s.bind((HOST,PORT))
-s.listen() # Listen for incoming connections
+s.listen(1) # Listen for incoming connections
 
 print(f"Server listening on port {PORT}")
 print(f"**Shut down server with message 'Close'.**")
